@@ -7,7 +7,7 @@ public class AlbumFactory {
     public Map<String, Album> albumList;
 
     private AlbumFactory() {
-        albumList = new HashMap<>();
+        this.albumList = new HashMap<>();
     }
 
     public static AlbumFactory getInstance(){
@@ -22,8 +22,8 @@ public class AlbumFactory {
         this.albumList.remove(id);
     }
 
-    public void addIaddAlbumListD(Album a){
-        albumList.put(a.getId(), a);
+    public void addAlbumList(Album a){
+        this.albumList.put(a.getId(), a);
     }
 
 }

@@ -8,11 +8,9 @@ public class Album{
 
     private Play[] playlist;
 
-    public Album(String id, String name, LocalDateTime date, Play[] playlist) {
+    public Album(String id, String name) {
         this.id = id;
         this.name = name;
-        this.date = date;
-        this.playlist = playlist;
     }
 
     public String getId() {
@@ -56,4 +54,6 @@ public class Album{
                 ", playlist=" + Arrays.toString(playlist) +
                 '}';
     }
+    
+    
 }
