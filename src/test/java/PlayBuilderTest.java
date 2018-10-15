@@ -21,4 +21,5 @@ public class PlayBuilderTest {
         assertEquals("MJ", play.getAuthor());
         assertEquals(PlayInfo.ROCK, play.getPlayinfo());
     }
+
 }
