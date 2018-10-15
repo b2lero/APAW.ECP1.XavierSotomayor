@@ -1,3 +1,3 @@
 public enum PlayInfo {
-    ROCK, POP, HIP_HOP;
+    ROCK, POP, HIPHOP;
 }
