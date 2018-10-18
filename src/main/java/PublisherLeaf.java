@@ -1,4 +1,3 @@
-import com.sun.xml.internal.ws.server.UnsupportedMediaException;
 
 public class PublisherLeaf extends PublisherComponent{
 
@@ -16,6 +15,7 @@ public class PublisherLeaf extends PublisherComponent{
 
     @Override
     public void add(PublisherComponent publisherComponent) {
+        throw new UnsupportedOperationException("Can't do that");
     }
 
     @Override
