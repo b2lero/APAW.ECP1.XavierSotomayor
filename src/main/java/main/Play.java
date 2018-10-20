@@ -1,4 +1,4 @@
-package strategy;
+package main;
 
 import java.util.UUID;
 
@@ -46,7 +46,7 @@ public class Play {
 
     @Override
     public String toString() {
-        return "Play{" +
+        return "main.Play{" +
                 "id='" + id + '\'' +
                 ", namePlay='" + namePlay + '\'' +
                 ", author='" + author + '\'' +

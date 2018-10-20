@@ -1,3 +1,5 @@
+package main;
+
 public class PlayBuilder {
 
     private Play play;

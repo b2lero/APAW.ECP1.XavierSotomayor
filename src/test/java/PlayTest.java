@@ -1,3 +1,5 @@
+import main.Play;
+import main.PlayInfo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +13,7 @@ public class PlayTest {
 
     @BeforeEach
     void before(){
-        play = new Play("Name of a Play");
+        play = new Play("Name of a main.Play");
         play.setAuthor("authorName");
         play.setPlayinfo(PlayInfo.ROCK);
     }
@@ -25,7 +27,7 @@ public class PlayTest {
 
     @Test
     void testNamePlay(){
-        assertEquals("Name of a Play", play.getNamePlay());
+        assertEquals("Name of a main.Play", play.getNamePlay());
     }
 
     @Test
