@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,6 +15,7 @@ public class AlbumFactory {
 
     private AlbumFactory() {
         this.albumList = new HashMap<>();
+        this.consumers = new ArrayList<>();
     }
 
     public static AlbumFactory getInstance(){
@@ -24,21 +26,22 @@ public class AlbumFactory {
       return albumList.get(id);
     };
 
-    public void removeAlbumList(String id){
-        this.albumList.remove(id);
-    }
-
     public void addAlbumList(Album a){
         this.albumList.put(a.getId(), a);
         this.consumers.forEach(c -> c.accept(a.getName()));
     }
 
+    public void removeAlbumList(String id){
+        this.albumList.remove(id);
+    }
+
     public Consumer<String> subscribe(Consumer<String> consumer){
-        consumers.add(consumer);
+        this.consumers.add(consumer);
         return consumer;
     }
 
     public void unsubscribe(Consumer<String> consumer){
-        consumers.remove(consumer);
+        this.consumers.remove(consumer);
     }
+
 }
