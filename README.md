@@ -1,4 +1,4 @@
-# Pråctica Arquitectura y Patrones
+# Practica Arquitectura y Patrones
 
 Patrones utilizados
 * Factory
