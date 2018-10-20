@@ -1,10 +1,16 @@
+package main;
+
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.function.Consumer;
 
 public class AlbumFactory {
 
     public static final AlbumFactory instance = new AlbumFactory();
     public Map<String, Album> albumList;
+
+    private List<Consumer<String>> consumers; // my observers
 
     private AlbumFactory() {
         this.albumList = new HashMap<>();
@@ -25,5 +31,6 @@ public class AlbumFactory {
     public void addAlbumList(Album a){
         this.albumList.put(a.getId(), a);
     }
+
 
 }

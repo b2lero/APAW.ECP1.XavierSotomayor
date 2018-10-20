@@ -1,3 +1,5 @@
+package main;
+
 public class Events{
 
     private String id;

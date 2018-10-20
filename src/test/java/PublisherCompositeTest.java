@@ -1,3 +1,4 @@
+import main.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -23,8 +24,8 @@ public class PublisherCompositeTest {
         PublisherComponent sub1;
         PublisherComponent sub12;
 
-        this.albumList.add(new Album("01", "Thriller"));
-        this.albumList.add(new Album("02", "Starboy"));
+        this.albumList.add(new Album("01", "Thriller", null));
+        this.albumList.add(new Album("02", "Starboy", null));
 
         this.root = new PublisherComposite("root");
         this.publisherLeaf = new Publisher("1", "publisherLeaf_01",albumList);

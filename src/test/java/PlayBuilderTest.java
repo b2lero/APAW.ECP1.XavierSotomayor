@@ -1,3 +1,6 @@
+import main.Play;
+import main.PlayBuilder;
+import main.PlayInfo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

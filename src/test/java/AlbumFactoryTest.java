@@ -1,3 +1,5 @@
+import main.Album;
+import main.AlbumFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +11,7 @@ public class AlbumFactoryTest {
     @BeforeEach
     void before(){
         AlbumFactory albumFactory = AlbumFactory.getInstance();
-        Album newAlbum = new Album("1","Thriller");
+        Album newAlbum = new Album("1","Thriller", null);
         albumFactory.addAlbumList(newAlbum);
     }
 

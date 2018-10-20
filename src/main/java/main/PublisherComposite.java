@@ -1,10 +1,11 @@
+package main;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class PublisherComposite extends PublisherComponent {
 
     private List<PublisherComponent> publisherComponentList;
-
     public PublisherComposite (String name){
         super(name);
         this.publisherComponentList = new ArrayList<>();
@@ -27,4 +28,9 @@ public class PublisherComposite extends PublisherComponent {
     }
 
 
+    @Override
+    public String view() {
+
+        return super.view();
+    }
 }
