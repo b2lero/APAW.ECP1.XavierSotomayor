@@ -60,7 +60,4 @@ public class AlbumStrategyTest {
         sortStrategy.sort(albums);
     }
 
-
-
-
 }
