@@ -10,7 +10,7 @@ public class AlbumFactory {
     public static final AlbumFactory instance = new AlbumFactory();
     public Map<String, Album> albumList;
 
-    private List<Consumer<String>> consumers; // my observers
+    private List<Consumer<String>> consumers;
 
     private AlbumFactory() {
         this.albumList = new HashMap<>();
@@ -30,7 +30,15 @@ public class AlbumFactory {
 
     public void addAlbumList(Album a){
         this.albumList.put(a.getId(), a);
+        this.consumers.forEach(c -> c.accept(a.getName()));
     }
 
+    public Consumer<String> subscribe(Consumer<String> consumer){
+        consumers.add(consumer);
+        return consumer;
+    }
 
+    public void unsubscribe(Consumer<String> consumer){
+        consumers.remove(consumer);
+    }
 }
