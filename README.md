@@ -1,6 +1,6 @@
 ## Practica Arquitectura y Patrones
 
-###Patrones utilizados
+### Patrones utilizados
 * Factory
 * Singleton
 * Builder
@@ -23,5 +23,5 @@ decidir en tiempo de ejecución el algoritmo que debe ejecutar.
 #### InsertionSort/SelectionSort
 > implementa un algoritmo utilizando la interfaz Strategy. Es la representación de un algoritmo.
 
-####SortingContext
+#### SortingContext
 > mantiene una referencia a Strategy y según las características del contexto, optará por una estrategia determinada.
